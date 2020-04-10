@@ -2,18 +2,18 @@
 ## Directory structure
 ```
 + src/
-  + repositories/
-    + SelfApi/
-      + CrsfCookie/
-        + index.js
-      + User/
-        + index.js
-      + Repository.js
-    + AnotherEndpointApi/
-      + Post/
-        + index.js
-      + Repository.js
-    + RepositoryFactory.js
+    + repositories/
+        + SelfApi/
+            + CrsfCookie/
+                + index.js
+            + User/
+                + index.js
+            + Repository.js
+        + AnotherEndpointApi/
+            + Post/
+                + index.js
+            + Repository.js
+        + RepositoryFactory.js
 ```
 ## Usage
 ```js
@@ -34,10 +34,10 @@ const response = await AnotherEndpointApiPost.update({dataset})
 const response = await AnotherEndpointApiPost.delete(id)
 ```
 ## Backend (Laravel) URIs
-|URI|Verb|Action|Frontend method|
-|--|--|--|--|
-|/api/[model]/|[POST:dataset]|Create a dataset|.create({dataset})|
-|/api/[model]/?...|[GET:conditions]|Read list of datasets|.search({conditions})|
-|/api/[model]/{id}|[GET]|Read a dataset|.get(id)|
-|/api/[model]/{id}|[PATCH:dataset]|Update a dataset|.update({dataset})|
-|/api/[model]/{id}|[DELETE]|Delete a dataset|.delete(id)|
+| URI               | Verb             | Action                | Frontend method       |
+| ----------------- | ---------------- | --------------------- | --------------------- |
+| /api/[model]/     | [POST:dataset]   | Create a dataset      | .create({dataset})    |
+| /api/[model]/?... | [GET:conditions] | Read list of datasets | .search({conditions}) |
+| /api/[model]/{id} | [GET]            | Read a dataset        | .get(id)              |
+| /api/[model]/{id} | [PATCH:dataset]  | Update a dataset      | .update({dataset})    |
+| /api/[model]/{id} | [DELETE]         | Delete a dataset      | .delete(id)           |
